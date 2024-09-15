@@ -1,0 +1,22 @@
+{
+    "Enviroment": "local",
+    "Controllers": [
+        "grpc",
+        "rest"
+    ],
+    "DatabaseURL": "localhost",
+    "DatabasePort": "9306",
+    "DatabaseUser": "root",
+    "DatabasePassword": "example",
+    "DatabaseName": "user",
+    "ServiceName": "reporting",
+    "ServicePort": "9284",
+    "GRPCPort": "50051",
+    "LogAddress": "localhost:4004",
+    "BrokerProducer": "boiler",
+    "BrokerAddress": "nats://localhost:4222",
+    "BrokerTopic": [
+        "test",
+        "kitchen"
+    ]
+}

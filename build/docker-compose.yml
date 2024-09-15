@@ -1,0 +1,19 @@
+name: 'stream'
+services:
+
+  nats:
+    container_name: nats-server
+    image: nats:2.9.25-alpine3.18
+    restart: always
+    command: --js
+    volumes:
+      - ./config/nats.conf:/etc/nats/nats-server.conf
+    ports:
+      - "4222:4222"
+      - "8222:8222"
+    networks:
+      - web
+  
+networks:
+  web:
+    external: true
